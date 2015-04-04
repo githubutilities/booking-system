@@ -1,0 +1,6 @@
+<map id="MyStackTest" name="MyStackTest">
+<area shape="rect" id="node2" href="$d9/dbc/class_my_stack.html#a00b11a3a07aa0366068ebbf80ef13fbf" title="MyStack::empty" alt="" coords="152,5,271,32"/>
+<area shape="rect" id="node3" href="$d9/dbc/class_my_stack.html#af35ded729f4359925461abdb7f2a48f7" title="MyStack::top" alt="" coords="161,56,261,83"/>
+<area shape="rect" id="node4" href="$d9/dbc/class_my_stack.html#ae6bef0ba663f36681304308ef43a5bb8" title="MyStack::pop" alt="" coords="160,107,263,133"/>
+<area shape="rect" id="node5" href="$d9/dbc/class_my_stack.html#abb3a6159d9fd80fd23e769d689a9a861" title="MyStack::push" alt="" coords="156,157,267,184"/>
+</map>

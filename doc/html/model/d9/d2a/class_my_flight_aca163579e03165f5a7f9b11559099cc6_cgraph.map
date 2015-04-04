@@ -1,0 +1,7 @@
+<map id="MyFlight::write" name="MyFlight::write">
+<area shape="rect" id="node2" href="$d5/d00/class_my_vector.html#aba8b71548ac6b11442f6778f6de0837c" title="MyVector::size" alt="" coords="170,5,281,32"/>
+<area shape="rect" id="node3" href="$dd/d8a/class_my_queue.html#aa501766325ac62758512722fc70e20cd" title="MyQueue::size" alt="" coords="170,56,281,83"/>
+<area shape="rect" id="node4" href="$dd/d8a/class_my_queue.html#a7c8b4ab713b06ce26fae2a3a4bde195e" title="MyQueue::front" alt="" coords="170,107,281,133"/>
+<area shape="rect" id="node5" href="$dd/d8a/class_my_queue.html#a99644a004490e54ba30ecf22c56be899" title="MyQueue::pop" alt="" coords="172,157,279,184"/>
+<area shape="rect" id="node6" href="$d1/d73/class_my_customer.html#a0d80e279ced753f91f612bdf99071422" title="MyCustomer::write" alt="" coords="160,208,291,235"/>
+</map>

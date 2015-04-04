@@ -1,0 +1,5 @@
+<map id="MyFlightBookingSystem::joinQueue" name="MyFlightBookingSystem::joinQueue">
+<area shape="rect" id="node2" href="$d9/d2a/class_my_flight.html#ac5b99d31817280fc70433f0e77a188b2" title="MyFlight::getPassLimit" alt="" coords="217,5,373,32"/>
+<area shape="rect" id="node3" href="$d9/d2a/class_my_flight.html#a31bbf90e828d8e3a69dcea22d21e125b" title="MyFlight::joinQueue" alt="" coords="226,56,365,83"/>
+<area shape="rect" id="node4" href="$dd/d8a/class_my_queue.html#a7f67fec06266778620dfa3b464b8e7ff" title="MyQueue::push" alt="" coords="421,56,536,83"/>
+</map>

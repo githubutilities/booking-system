@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Booking_System: F:/app_data/qt_workspace/booking/buy_ticket.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Booking_System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_491710ea17e3e674bc1d3368516a61b6.html">qt_workspace</a></li><li class="navelem"><a class="el" href="../../dir_6cc64272f6d12d92cd30fbfe39ead3a7.html">booking</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">buy_ticket.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/dee/buy__ticket_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BUY_TICKET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BUY_TICKET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dc/dda/buy__dialog_8h.html">buy_dialog.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d77/_my_flight_booking_system_8h.html">MyFlightBookingSystem.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d41/classbuy__ticket.html">buy_ticket</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d9/d41/classbuy__ticket.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d41/classbuy__ticket.html">buy_ticket</a> : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="../../d9/d41/classbuy__ticket.html#ab650af80d4c72b8e6c1ba008528951da">buy_ticket</a>(QWidget *parent = 0);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d9/d41/classbuy__ticket.html#ab0fe01990406ac34cc0b87a40a2ee0c6">~buy_ticket</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/d41/classbuy__ticket.html#a254843ddd734c960997be9daf4d910b7">setSystem</a>(<a class="code" href="../../d7/dd7/class_my_flight_booking_system.html">MyFlightBookingSystem</a> *sys);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> on_queryBt_clicked();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> on_queryLn_editingFinished();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> on_listView_clicked(<span class="keyword">const</span> QModelIndex &amp;index);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> on_buyBt_clicked();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Ui::buy_ticket *ui;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d7/dd7/class_my_flight_booking_system.html">MyFlightBookingSystem</a> *system;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> selected; <span class="keywordtype">int</span> idxSelect;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d5/d00/class_my_vector.html">MyVector&lt;MyFlight *&gt;</a> *cad;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // BUY_TICKET_H</span></div>
+<div class="ttc" id="classbuy__ticket_html_a254843ddd734c960997be9daf4d910b7"><div class="ttname"><a href="../../d9/d41/classbuy__ticket.html#a254843ddd734c960997be9daf4d910b7">buy_ticket::setSystem</a></div><div class="ttdeci">void setSystem(MyFlightBookingSystem *sys)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de3/buy__ticket_8cpp_source.html#l00022">buy_ticket.cpp:22</a></div></div>
+<div class="ttc" id="buy__dialog_8h_html"><div class="ttname"><a href="../../dc/dda/buy__dialog_8h.html">buy_dialog.h</a></div></div>
+<div class="ttc" id="classbuy__ticket_html_ab0fe01990406ac34cc0b87a40a2ee0c6"><div class="ttname"><a href="../../d9/d41/classbuy__ticket.html#ab0fe01990406ac34cc0b87a40a2ee0c6">buy_ticket::~buy_ticket</a></div><div class="ttdeci">~buy_ticket()</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de3/buy__ticket_8cpp_source.html#l00017">buy_ticket.cpp:17</a></div></div>
+<div class="ttc" id="class_my_flight_booking_system_html"><div class="ttname"><a href="../../d7/dd7/class_my_flight_booking_system.html">MyFlightBookingSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d77/_my_flight_booking_system_8h_source.html#l00013">MyFlightBookingSystem.h:13</a></div></div>
+<div class="ttc" id="classbuy__ticket_html"><div class="ttname"><a href="../../d9/d41/classbuy__ticket.html">buy_ticket</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/dee/buy__ticket_8h_source.html#l00012">buy_ticket.h:12</a></div></div>
+<div class="ttc" id="classbuy__ticket_html_ab650af80d4c72b8e6c1ba008528951da"><div class="ttname"><a href="../../d9/d41/classbuy__ticket.html#ab650af80d4c72b8e6c1ba008528951da">buy_ticket::buy_ticket</a></div><div class="ttdeci">buy_ticket(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/de3/buy__ticket_8cpp_source.html#l00008">buy_ticket.cpp:8</a></div></div>
+<div class="ttc" id="_my_flight_booking_system_8h_html"><div class="ttname"><a href="../../d2/d77/_my_flight_booking_system_8h.html">MyFlightBookingSystem.h</a></div></div>
+<div class="ttc" id="class_my_vector_html"><div class="ttname"><a href="../../d5/d00/class_my_vector.html">MyVector&lt; MyFlight * &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 六月 10日 星期二 15:34:36 , 为 Booking_System使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

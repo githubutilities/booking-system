@@ -1,0 +1,7 @@
+<map id="MyQueueTest" name="MyQueueTest">
+<area shape="rect" id="node2" href="$dd/d8a/class_my_queue.html#a8fa7376f937125dd66cb19ce0df8e82f" title="MyQueue::empty" alt="" coords="156,5,279,32"/>
+<area shape="rect" id="node3" href="$dd/d8a/class_my_queue.html#a7c8b4ab713b06ce26fae2a3a4bde195e" title="MyQueue::front" alt="" coords="162,56,273,83"/>
+<area shape="rect" id="node4" href="$dd/d8a/class_my_queue.html#a4bf14bedb02a2d583c2113d89a9b30d8" title="MyQueue::back" alt="" coords="160,107,275,133"/>
+<area shape="rect" id="node5" href="$dd/d8a/class_my_queue.html#a99644a004490e54ba30ecf22c56be899" title="MyQueue::pop" alt="" coords="164,157,271,184"/>
+<area shape="rect" id="node6" href="$dd/d8a/class_my_queue.html#a7f67fec06266778620dfa3b464b8e7ff" title="MyQueue::push" alt="" coords="160,208,275,235"/>
+</map>

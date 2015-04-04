@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Booking_System: MyFlight.h Ê∫êÊñá‰ª∂</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Booking_System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Âà∂‰ΩúËÄÖ Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>È¶ñÈ°µ</span></a></li>
+      <li><a href="../../annotated.html"><span>Á±ª</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Êñá‰ª∂</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Êñá‰ª∂ÂàóË°®</span></a></li>
+      <li><a href="../../globals.html"><span>Êñá‰ª∂ÊàêÂëò</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MyFlight.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d0c/_my_flight_8h.html">ÊµèËßàËØ•Êñá‰ª∂ÁöÑÊñáÊ°£.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MYFLIGHT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MYFLIGHT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d17/_my_vector_8h.html">MyVector.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d47/_my_queue_8h.html">MyQueue.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d1f/_my_customer_8h.html">MyCustomer.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d8/d0c/_my_flight_8h.html#a7b4ba3ddee109d1473fb9d87054d9f68">   13</a></span>&#160;<span class="preprocessor">#define CUSTOMER_NOT_FOUND -1</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d8/d0c/_my_flight_8h.html#a9952acb91d4d45f6a364322221139e47">   14</a></span>&#160;<span class="preprocessor">#define RETURN_TICKET_SUCCESS 0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d8/d0c/_my_flight_8h.html#ae7efa9d8d75a6badce8ab0d03cf7dbd7">   15</a></span>&#160;<span class="preprocessor">#define INVALID_TICKET_NUM 1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d9/d2a/class_my_flight.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> init(istream &amp;fin);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> write(ostream &amp;fout);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> setDest(<span class="keywordtype">string</span> dest);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> setFlightID(<span class="keywordtype">string</span> fid);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> setPlaneID(<span class="keywordtype">string</span> pid);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setRemainingTicket(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> addCustomer(<a class="code" href="../../d1/d73/class_my_customer.html">MyCustomer</a> * &amp;user);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> joinQueue(<a class="code" href="../../d1/d73/class_my_customer.html">MyCustomer</a> * user);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> returnTicket(<span class="keywordtype">string</span> username, <span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">string</span> getDest();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">string</span> getFlightID();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">string</span> getPlaneID();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">string</span> getDate();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> getPassLimit();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> getRemainingTicket();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> operator == (<span class="keyword">const</span> <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> &amp;b) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">string</span> destination;                 <span class="comment">//÷’µ„’æ√˚</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">string</span> flightID;                    <span class="comment">//∫Ω∞‡∫≈  string planeID;                     //∑…ª˙∫≈
+  int date;                           //‘¬∫Õ»’∑÷±”√¡ΩŒª ˝±Ì æ£¨ƒÍ”√ÀƒŒª ˝
+    int passagerLimit;                  //≥À‘±∂®∂Ó
+   int remainingTicket;                //”‡∆±¡ø
+
+    MyVector&lt;MyCustomer *&gt; onBoard;
+    MyQueue&lt;MyCustomer *&gt; waiting;
+    // converts Gregorian date to integer (Julian day number)
+    int dateToInt(int m, int d, int y);
+    // converts integer (Julian day number) to Gregorian date: month/day/year
+    void intToDate(int jd, int &amp;m, int &amp;d, int &amp;y);
+};
+
+int cmpByFlightID(MyFlight *a, MyFlight *b);
+bool findByFlightID(MyFlight *a, MyFlight *b);
+int cmpByPlaneID(MyFlight *a, MyFlight *b);
+bool findByPlaneID(MyFlight *a, MyFlight *b);
+int cmpByDest(MyFlight *a, MyFlight *b);
+bool findByDest(MyFlight *a, MyFlight *b);
+
+#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">string</span> planeID;                     <span class="comment">//∑…ª˙∫≈   int date;                           //‘¬∫Õ»’∑÷±”√¡ΩŒª ˝±Ì æ£¨ƒÍ”√ÀƒŒª ˝
+    int passagerLimit;                  //≥À‘±∂®∂Ó
+   int remainingTicket;                //”‡∆±¡ø
+
+    MyVector&lt;MyCustomer *&gt; onBoard;
+    MyQueue&lt;MyCustomer *&gt; waiting;
+    // converts Gregorian date to integer (Julian day number)
+    int dateToInt(int m, int d, int y);
+    // converts integer (Julian day number) to Gregorian date: month/day/year
+    void intToDate(int jd, int &amp;m, int &amp;d, int &amp;y);
+};
+
+int cmpByFlightID(MyFlight *a, MyFlight *b);
+bool findByFlightID(MyFlight *a, MyFlight *b);
+int cmpByPlaneID(MyFlight *a, MyFlight *b);
+bool findByPlaneID(MyFlight *a, MyFlight *b);
+int cmpByDest(MyFlight *a, MyFlight *b);
+bool findByDest(MyFlight *a, MyFlight *b);
+
+#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> date;                           <span class="comment">//‘¬∫Õ»’∑÷±”√¡ΩŒª ˝±Ì æ£¨ƒÍ”√ÀƒŒª ˝</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> passagerLimit;                  <span class="comment">//≥À‘±∂®∂Ó    int remainingTicket;                //”‡∆±¡ø
+
+    MyVector&lt;MyCustomer *&gt; onBoard;
+    MyQueue&lt;MyCustomer *&gt; waiting;
+    // converts Gregorian date to integer (Julian day number)
+    int dateToInt(int m, int d, int y);
+    // converts integer (Julian day number) to Gregorian date: month/day/year
+    void intToDate(int jd, int &amp;m, int &amp;d, int &amp;y);
+};
+
+int cmpByFlightID(MyFlight *a, MyFlight *b);
+bool findByFlightID(MyFlight *a, MyFlight *b);
+int cmpByPlaneID(MyFlight *a, MyFlight *b);
+bool findByPlaneID(MyFlight *a, MyFlight *b);
+int cmpByDest(MyFlight *a, MyFlight *b);
+bool findByDest(MyFlight *a, MyFlight *b);
+
+#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> remainingTicket;                <span class="comment">//”‡∆±¡ø</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d5/d00/class_my_vector.html">MyVector&lt;MyCustomer *&gt;</a> onBoard;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../dd/d8a/class_my_queue.html">MyQueue&lt;MyCustomer *&gt;</a> waiting;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// converts Gregorian date to integer (Julian day number)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> dateToInt(<span class="keywordtype">int</span> m, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// converts integer (Julian day number) to Gregorian date: month/day/year</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> intToDate(<span class="keywordtype">int</span> jd, <span class="keywordtype">int</span> &amp;m, <span class="keywordtype">int</span> &amp;d, <span class="keywordtype">int</span> &amp;y);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#aea6f80c3e1b55e6945249830dcc34a7d">cmpByFlightID</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#a867c9141b09cccbabb75a2e2d5dfca34">findByFlightID</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#a1c21802d1e968cbae5f441d0ad28b226">cmpByPlaneID</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#a93e209923dfef02703382081264a2f40">findByPlaneID</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#ae0c3e603585a58d8812a1624d739438a">cmpByDest</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d8/d0c/_my_flight_8h.html#aa53395838e66ac38bca91dd1a7353dac">findByDest</a>(<a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *a, <a class="code" href="../../d9/d2a/class_my_flight.html">MyFlight</a> *b);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_my_flight_8h_html_aa53395838e66ac38bca91dd1a7353dac"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#aa53395838e66ac38bca91dd1a7353dac">findByDest</a></div><div class="ttdeci">bool findByDest(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00160">MyFlight.cpp:160</a></div></div>
+<div class="ttc" id="class_my_customer_html"><div class="ttname"><a href="../../d1/d73/class_my_customer.html">MyCustomer</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d1f/_my_customer_8h_source.html#l00010">MyCustomer.h:10</a></div></div>
+<div class="ttc" id="_my_flight_8h_html_a1c21802d1e968cbae5f441d0ad28b226"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#a1c21802d1e968cbae5f441d0ad28b226">cmpByPlaneID</a></div><div class="ttdeci">int cmpByPlaneID(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00151">MyFlight.cpp:151</a></div></div>
+<div class="ttc" id="_my_flight_8h_html_a93e209923dfef02703382081264a2f40"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#a93e209923dfef02703382081264a2f40">findByPlaneID</a></div><div class="ttdeci">bool findByPlaneID(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00155">MyFlight.cpp:155</a></div></div>
+<div class="ttc" id="_my_vector_8h_html"><div class="ttname"><a href="../../d7/d17/_my_vector_8h.html">MyVector.h</a></div></div>
+<div class="ttc" id="_my_flight_8h_html_a867c9141b09cccbabb75a2e2d5dfca34"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#a867c9141b09cccbabb75a2e2d5dfca34">findByFlightID</a></div><div class="ttdeci">bool findByFlightID(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00150">MyFlight.cpp:150</a></div></div>
+<div class="ttc" id="_my_customer_8h_html"><div class="ttname"><a href="../../d5/d1f/_my_customer_8h.html">MyCustomer.h</a></div></div>
+<div class="ttc" id="_my_flight_8h_html_ae0c3e603585a58d8812a1624d739438a"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#ae0c3e603585a58d8812a1624d739438a">cmpByDest</a></div><div class="ttdeci">int cmpByDest(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00156">MyFlight.cpp:156</a></div></div>
+<div class="ttc" id="_my_flight_8h_html_aea6f80c3e1b55e6945249830dcc34a7d"><div class="ttname"><a href="../../d8/d0c/_my_flight_8h.html#aea6f80c3e1b55e6945249830dcc34a7d">cmpByFlightID</a></div><div class="ttdeci">int cmpByFlightID(MyFlight *a, MyFlight *b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d85/_my_flight_8cpp_source.html#l00146">MyFlight.cpp:146</a></div></div>
+<div class="ttc" id="class_my_queue_html"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html">MyQueue&lt; MyCustomer * &gt;</a></div></div>
+<div class="ttc" id="_my_queue_8h_html"><div class="ttname"><a href="../../de/d47/_my_queue_8h.html">MyQueue.h</a></div></div>
+<div class="ttc" id="class_my_flight_html"><div class="ttname"><a href="../../d9/d2a/class_my_flight.html">MyFlight</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d0c/_my_flight_8h_source.html#l00016">MyFlight.h:16</a></div></div>
+<div class="ttc" id="class_my_vector_html"><div class="ttname"><a href="../../d5/d00/class_my_vector.html">MyVector&lt; MyCustomer * &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+ÁîüÊàê‰∫é 2014Âπ¥ ÂÖ≠Êúà 10Êó• ÊòüÊúü‰∫å 15:23:52 , ‰∏∫ Booking_System‰ΩøÁî®  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

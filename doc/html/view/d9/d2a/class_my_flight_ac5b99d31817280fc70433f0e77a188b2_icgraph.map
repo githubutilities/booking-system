@@ -1,0 +1,4 @@
+<map id="MyFlight::getPassLimit" name="MyFlight::getPassLimit">
+<area shape="rect" id="node2" href="$d7/dd7/class_my_flight_booking_system.html#a2053b3a4dc44e4a57432c60bdb76af5d" title="MyFlightBookingSystem\l::book" alt="" coords="209,5,373,47"/>
+<area shape="rect" id="node3" href="$d7/dd7/class_my_flight_booking_system.html#aed4a06b5480f7ac6654c65e03ec445fa" title="MyFlightBookingSystem\l::joinQueue" alt="" coords="209,71,373,112"/>
+</map>

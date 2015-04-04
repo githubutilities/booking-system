@@ -1,0 +1,5 @@
+<map id="MyFlight::init" name="MyFlight::init">
+<area shape="rect" id="node2" href="$d1/d73/class_my_customer.html#a09b8369c6cea3f6a5a0364486f52fa5d" title="MyCustomer::init" alt="" coords="165,5,286,32"/>
+<area shape="rect" id="node3" href="$d5/d00/class_my_vector.html#add6b9570605d13f8b0ecff68f1617d8e" title="MyVector::push_back" alt="" coords="151,56,300,83"/>
+<area shape="rect" id="node4" href="$dd/d8a/class_my_queue.html#a7f67fec06266778620dfa3b464b8e7ff" title="MyQueue::push" alt="" coords="168,107,283,133"/>
+</map>

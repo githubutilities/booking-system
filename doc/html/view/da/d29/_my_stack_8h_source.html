@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Booking_System: F:/app_data/qt_workspace/booking/MyStack.h 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Booking_System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_491710ea17e3e674bc1d3368516a61b6.html">qt_workspace</a></li><li class="navelem"><a class="el" href="../../dir_6cc64272f6d12d92cd30fbfe39ead3a7.html">booking</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MyStack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d29/_my_stack_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MY_STACK_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MY_STACK_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//TODO NULL indentifier not found</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">    6</a></span>&#160;<span class="preprocessor">#define NULL 0</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/dbc/class_my_stack.html">MyStack</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="../../d9/dbc/class_my_stack.html#ae037341fbf0431154951a3fbf54f61a0">MyStack</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d9/dbc/class_my_stack.html#aba3484f388af9ac534250bcdaffeed3e">~MyStack</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d9/dbc/class_my_stack.html#a00b11a3a07aa0366068ebbf80ef13fbf">empty</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    elem <a class="code" href="../../d9/dbc/class_my_stack.html#af35ded729f4359925461abdb7f2a48f7">top</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/class_my_stack.html#ae6bef0ba663f36681304308ef43a5bb8">pop</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/class_my_stack.html#abb3a6159d9fd80fd23e769d689a9a861">push</a>(elem e);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">struct </span>node {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        elem val;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        node * nxt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    } *head;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#ae037341fbf0431154951a3fbf54f61a0">   25</a></span>&#160;<a class="code" href="../../d9/dbc/class_my_stack.html#ae037341fbf0431154951a3fbf54f61a0">MyStack&lt;elem&gt;::MyStack</a>() {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    head = <a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#aba3484f388af9ac534250bcdaffeed3e">   30</a></span>&#160;<a class="code" href="../../d9/dbc/class_my_stack.html#aba3484f388af9ac534250bcdaffeed3e">MyStack&lt;elem&gt;::~MyStack</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    node * tmp = head;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != head) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        tmp = head;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        head = head-&gt;nxt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    head = <a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#a00b11a3a07aa0366068ebbf80ef13fbf">   41</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/dbc/class_my_stack.html#a00b11a3a07aa0366068ebbf80ef13fbf">MyStack&lt;elem&gt;::empty</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> head == <a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#af35ded729f4359925461abdb7f2a48f7">   46</a></span>&#160;elem <a class="code" href="../../d9/dbc/class_my_stack.html#af35ded729f4359925461abdb7f2a48f7">MyStack&lt;elem&gt;::top</a>() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> head-&gt;val;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#ae6bef0ba663f36681304308ef43a5bb8">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/class_my_stack.html#ae6bef0ba663f36681304308ef43a5bb8">MyStack&lt;elem&gt;::pop</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    assert(<a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != head);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    node * tmp = head;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    head = head-&gt;nxt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> elem&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d9/dbc/class_my_stack.html#abb3a6159d9fd80fd23e769d689a9a861">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/dbc/class_my_stack.html#abb3a6159d9fd80fd23e769d689a9a861">MyStack&lt;elem&gt;::push</a>(elem e) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    node * tmp = <span class="keyword">new</span> node;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    assert(<a class="code" href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != tmp);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    tmp-&gt;val = e;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    tmp-&gt;nxt = head;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    head = tmp;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_my_stack_html_a00b11a3a07aa0366068ebbf80ef13fbf"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#a00b11a3a07aa0366068ebbf80ef13fbf">MyStack::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00041">MyStack.h:41</a></div></div>
+<div class="ttc" id="class_my_stack_html_ae6bef0ba663f36681304308ef43a5bb8"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#ae6bef0ba663f36681304308ef43a5bb8">MyStack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00051">MyStack.h:51</a></div></div>
+<div class="ttc" id="class_my_stack_html_abb3a6159d9fd80fd23e769d689a9a861"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#abb3a6159d9fd80fd23e769d689a9a861">MyStack::push</a></div><div class="ttdeci">void push(elem e)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00059">MyStack.h:59</a></div></div>
+<div class="ttc" id="class_my_stack_html_ae037341fbf0431154951a3fbf54f61a0"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#ae037341fbf0431154951a3fbf54f61a0">MyStack::MyStack</a></div><div class="ttdeci">MyStack()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00025">MyStack.h:25</a></div></div>
+<div class="ttc" id="_my_stack_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="../../da/d29/_my_stack_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00006">MyStack.h:6</a></div></div>
+<div class="ttc" id="class_my_stack_html_af35ded729f4359925461abdb7f2a48f7"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#af35ded729f4359925461abdb7f2a48f7">MyStack::top</a></div><div class="ttdeci">elem top()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00046">MyStack.h:46</a></div></div>
+<div class="ttc" id="class_my_stack_html_aba3484f388af9ac534250bcdaffeed3e"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html#aba3484f388af9ac534250bcdaffeed3e">MyStack::~MyStack</a></div><div class="ttdeci">~MyStack()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00030">MyStack.h:30</a></div></div>
+<div class="ttc" id="class_my_stack_html"><div class="ttname"><a href="../../d9/dbc/class_my_stack.html">MyStack</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d29/_my_stack_8h_source.html#l00008">MyStack.h:8</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 六月 10日 星期二 15:34:36 , 为 Booking_System使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

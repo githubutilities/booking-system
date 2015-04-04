@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Booking_System: MyQueueTest.cpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Booking_System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MyQueueTest.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d72/_my_queue_test_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d47/_my_queue_8h.html">MyQueue.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d8/d72/_my_queue_test_8cpp.html#af9af54a2ddcfc942199b9223113218ea">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d8/d72/_my_queue_test_8cpp.html#af9af54a2ddcfc942199b9223113218ea">MyQueueTest</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="../../dd/d8a/class_my_queue.html">MyQueue&lt;int&gt;</a> que;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    queue&lt;int&gt; quetmp;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> TIME = 2;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> MOD = 0x3f3f3f3f;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    srand(rand());</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; TIME; i++) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">int</span> tmp = rand() % MOD;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        srand(rand());</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span> (tmp % 5 == 0 &amp;&amp; que.<a class="code" href="../../dd/d8a/class_my_queue.html#a8fa7376f937125dd66cb19ce0df8e82f">empty</a>()) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            assert(<span class="keyword">true</span> != quetmp.empty());</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">int</span> a = que.<a class="code" href="../../dd/d8a/class_my_queue.html#a7c8b4ab713b06ce26fae2a3a4bde195e">front</a>();;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">int</span> b = quetmp.front();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            assert(a == b);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            a = que.<a class="code" href="../../dd/d8a/class_my_queue.html#a4bf14bedb02a2d583c2113d89a9b30d8">back</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            b = quetmp.back();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            assert(a == b);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            que.<a class="code" href="../../dd/d8a/class_my_queue.html#a99644a004490e54ba30ecf22c56be899">pop</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            quetmp.pop();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            que.<a class="code" href="../../dd/d8a/class_my_queue.html#a7f67fec06266778620dfa3b464b8e7ff">push</a>(tmp); quetmp.push(tmp);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;MyQueue PASSED!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="ttc" id="class_my_queue_html_a8fa7376f937125dd66cb19ce0df8e82f"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html#a8fa7376f937125dd66cb19ce0df8e82f">MyQueue::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00042">MyQueue.h:42</a></div></div>
+<div class="ttc" id="_my_queue_test_8cpp_html_af9af54a2ddcfc942199b9223113218ea"><div class="ttname"><a href="../../d8/d72/_my_queue_test_8cpp.html#af9af54a2ddcfc942199b9223113218ea">MyQueueTest</a></div><div class="ttdeci">int MyQueueTest()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d72/_my_queue_test_8cpp_source.html#l00007">MyQueueTest.cpp:7</a></div></div>
+<div class="ttc" id="class_my_queue_html_a7f67fec06266778620dfa3b464b8e7ff"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html#a7f67fec06266778620dfa3b464b8e7ff">MyQueue::push</a></div><div class="ttdeci">void push(elem e)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00057">MyQueue.h:57</a></div></div>
+<div class="ttc" id="class_my_queue_html_a7c8b4ab713b06ce26fae2a3a4bde195e"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html#a7c8b4ab713b06ce26fae2a3a4bde195e">MyQueue::front</a></div><div class="ttdeci">elem front()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00047">MyQueue.h:47</a></div></div>
+<div class="ttc" id="class_my_queue_html"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html">MyQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00007">MyQueue.h:7</a></div></div>
+<div class="ttc" id="_my_queue_8h_html"><div class="ttname"><a href="../../de/d47/_my_queue_8h.html">MyQueue.h</a></div></div>
+<div class="ttc" id="class_my_queue_html_a4bf14bedb02a2d583c2113d89a9b30d8"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html#a4bf14bedb02a2d583c2113d89a9b30d8">MyQueue::back</a></div><div class="ttdeci">elem back()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00052">MyQueue.h:52</a></div></div>
+<div class="ttc" id="class_my_queue_html_a99644a004490e54ba30ecf22c56be899"><div class="ttname"><a href="../../dd/d8a/class_my_queue.html#a99644a004490e54ba30ecf22c56be899">MyQueue::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d47/_my_queue_8h_source.html#l00071">MyQueue.h:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 六月 10日 星期二 15:23:52 , 为 Booking_System使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

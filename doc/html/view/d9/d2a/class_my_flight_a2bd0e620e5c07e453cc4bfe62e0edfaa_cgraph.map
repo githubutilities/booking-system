@@ -1,0 +1,6 @@
+<map id="MyFlight::addCustomer" name="MyFlight::addCustomer">
+<area shape="rect" id="node2" href="$d5/d00/class_my_vector.html#aba8b71548ac6b11442f6778f6de0837c" title="MyVector::size" alt="" coords="233,5,344,32"/>
+<area shape="rect" id="node3" href="$d1/d73/class_my_customer.html#a5c4a227e5de8fb3030488876940875dd" title="MyCustomer::getName" alt="" coords="211,56,367,83"/>
+<area shape="rect" id="node4" href="$d1/d73/class_my_customer.html#af563233f68d06471fbc983211a1c6819" title="MyCustomer::getNeed" alt="" coords="213,107,365,133"/>
+<area shape="rect" id="node5" href="$d5/d00/class_my_vector.html#add6b9570605d13f8b0ecff68f1617d8e" title="MyVector::push_back" alt="" coords="214,157,363,184"/>
+</map>
